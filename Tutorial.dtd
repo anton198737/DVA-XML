@@ -1,3 +1,4 @@
 <!DOCTYPE tutorial
 [
+	<!ELEMENT student (name, matrikel_number)>
 ]>
