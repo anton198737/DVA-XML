@@ -1,0 +1,29 @@
+h1 {
+	font-family: Arial,Univers,sans-serif;
+	font-size: 36pt;
+	color: red
+}
+.start_site {
+	background-color: cornsilk;
+	min-height: 600px;
+	min-width: 100%;
+}
+
+.centered {
+	text-align: center;
+}
+
+.small_container{
+	display: table;
+	min-height: 100px;	
+	min-width:100%;
+}
+
+.small_container > p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.site{
+	min-height: 600px;
+}
