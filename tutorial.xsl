@@ -12,32 +12,54 @@
 
 
 
-<xsl:template match="title_sheet">
+<xsl:template match="subject">
 	<div class="start_site">
-	<div class="centered">
-	<xsl:apply-templates select="title"/>
-	<xsl:apply-templates select="sub_title"/>
+		<xsl:apply-templates select="title_sheet"/>
+		</div>
+	<xsl:apply-templates select="main_article"/>
+</xsl:template>
+
+<xsl:template match="title_sheet">
+	
+	<div class="centred">
+		<h1><xsl:value-of select="main_title"/></h1>
+		<h2><xsl:value-of select="main_sub_title"/></h2>	
 	</div>	
 	<div class="small_container">
-	<p>
-	<b><xsl:value-of select="branch_of_study"/></b>
-	</p>
+		<xsl:value-of select="short_description"/>
+	</div>
+	<div class="small_container_align_mid">
+		<p>
+			<b><xsl:value-of select="branch_of_study"/></b>
+		</p>
 	</div>	
 	<xsl:apply-templates select="student"/>
-	</div>
-</xsl:template>
-
-<xsl:template match="title">
-	<h1><xsl:value-of select="."/></h1>
-</xsl:template>
-
-<xsl:template match="sub_title">
-	<h2><xsl:value-of select="."/></h2>
 </xsl:template>
 
 <xsl:template match="student">
 	Name: <b><xsl:value-of select="name"/></b>
 	<p>Matrikelnummer: <xsl:value-of select="matrikel_number"/></p>
+</xsl:template>
+
+<xsl:template match="main_article">
+	<div class="site">
+		<xsl:apply-templates select="article"/>
+	</div>
+</xsl:template>
+
+<xsl:template match="article">
+	<h3><xsl:value-of select="number"/><xsl:value-of select="title"/></h3>
+	<p>
+	<xsl:value-of select="text"/>
+	</p>
+	<xsl:apply-templates select="subarticle"/>
+</xsl:template>
+
+<xsl:template match="subarticle">
+	<h4><xsl:value-of select="number"/><xsl:value-of select="title"/></h4>
+	<p>
+	<xsl:value-of select="text"/>
+	</p>
 </xsl:template>
 
 

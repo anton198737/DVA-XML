@@ -3,17 +3,30 @@ h1 {
 	font-size: 36pt;
 	color: red
 }
+
+body {
+	margin: 0px 0px;
+}
+p {	
+	white-space: pre-line;
+}
+
 .start_site {
 	background-color: cornsilk;
-	min-height: 600px;
+	min-height: 100%;
 	min-width: 100%;
 }
 
-.centered {
+.centred {
 	text-align: center;
 }
 
-.small_container{
+.small_container {
+	min-width:100%;
+	min-height: 100px;
+}
+
+.small_container_align_mid{
 	display: table;
 	min-height: 100px;	
 	min-width:100%;

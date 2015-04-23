@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="tutorial.xsl"?>
-<!--<!DOCTYPE tutorial SYSTEM "Tutorial.dtd">-->
+<!--DOCTYPE tutorial SYSTEM "Tutorial.dtd"-->
 <tutorial>
 	<subject>
 		<title_sheet>
-			<title>XML</title>
-			<sub_title>Extensible Markup Language</sub_title>
+			<main_title>XML</main_title>
+			<main_sub_title>Extensible Markup Language</main_sub_title>
+			<short_description>
+			XML ist wie HTML eine Auszeichnugnssprache, welche zur Darstellung von 
+			elextronischen Texten verwendet wird. Sie ist plattformunabhänig und 
+			somit von jedem Betriebssystem darstellbar.
+			</short_description>
 			<branch_of_study>Studiengang Informatik</branch_of_study>
 			<student>
 				<name>Bernd Fecht</name>
@@ -13,25 +18,91 @@
 			</student>
 			<student>
 				<name>Anton Feit</name>
-				<matrikel_number>123</matrikel_number>
+				<matrikel_number>935482</matrikel_number>
 			</student>
 			<student>
 				<name>Fabian Ammann</name>
-				<matrikel_number>123</matrikel_number>
+				<matrikel_number>935611</matrikel_number>
 			</student>
-		</title_sheet>		
-		<short_description>
-			XML ist wie HTML eine Auszeichnugnssprache, welche zur Darstellung von 
-			elextronischen Texten verwendet wird. Sie ist plattformunabhänig und 
-			somit von jedem Betriebssystem darstellbar.
-		</short_description>
+		</title_sheet>
+		<main_article>
+			<article>
+				<number>1. </number>
+				<title>Was ist XML?</title>
+				<text>
+				XML ist eine Extensible(X) Markup(M) Language(L), auf dt. eine Auszeichnugssprache.
+				Sie bildet nach dem World Wide Web Consortium (W3C) eine Metasprache, was bedeutet, dass
+				andere anwendungsspezifische Sprachen sie als Basis verwenden.
+				Die Einschränkungen welche durch XML definiert sind, werden durch Schemasprachen wie DTD
+				ausgedrückt.
+				</text>
+			</article>
+			<article>
+				<number>2. </number>
+				<title>Struktur eines XML-Files</title>
+				<subarticle>
+					<number>2.1. </number>
+					<title>Logische Struktur</title>
+					<text>
+						Die logische Struktur einer XML-Datei bezieht sich auf die Unterscheidung zwischen Inhalt
+						und Metadaten. Der Inhalt besteht in der Regel aus Text, genauer Zeichendaten.
+						Metadaten werden durch Elemente beschrieben, die durch die Sonderzeichen &lt; und &gt; begrenz werden.
+						Für jede Anwendung ist es wichtig, dass eine XML-Datei immer nur seine eigene Meta-Beschreibung
+						und Selbstbeschreibung enthält.
+					</text>
+				</subarticle>
+				<subarticle>
+					<number>2.2. </number>
+					<title>Physikalische Struktur</title>
+					<text>
+						Die physikalische Sturktur einer XML-Datei bezieht sich auf die Einteilung eines 
+						logischen XML-Dokuments in verschiedene physikalische Abschnitte, den Entities, 
+						zerfallen kann, welche in verschiedenen Datein auf verschiedenen Servern liegen können.
+						Ein XML-Dokument ist erst dann vollständig geparst, wenn die URI (Uniform Ressource Identifier)
+						jeden Verweiß auf eine andere Datei vollends aufgelöst hat.
+					</text>
+				</subarticle>
+			</article>
+			<article>
+				<number>3. </number>
+				<title>Beispiel</title>
+				<text>	
+					<![CDATA[
+					<catalog>
+					<cd>
+					<title>Empire Burlesque</title>
+					<artist>Bob Dylan</artist>
+					<country>USA</country>
+					<company>Columbia</company>
+					<price>10.90</price>
+					<year>1985</year>
+					</cd> 
+					<cd>
+					<title>Hide your heart</title>
+					<artist>Bonnie Tyler</artist>
+					<country>UK</country>
+					<company>CBS Records</company>
+					<price>9.90</price>
+					<year>1980</year>
+					</cd>
+					</catalog>
+					]]>
+				</text>
+			</article>
+		</main_article>
 		
 	</subject>
 	
 	<subject>
 		<title_sheet>
-			<title>XML</title>
-			<sub_title>Extensible Markup Language</sub_title>
+			<main_title>CSS</main_title>
+			<main_sub_title>Cascading Style Sheet</main_sub_title>
+			<short_description>
+			CSS steht für Cascading Style Sheets und bedeutet "gestufte Gestaltungsbögen".
+			Das bedeuted das CSS eine Gestaltungssprache ist und zusammen mit HTML eine 
+			der Kernsprachen des Internets bildet. Mit CSS werden Gestaltungsanweisungen 
+			erstellt, die von den Auszeichnugnssprachen HTML und XML eigesetzt werden.
+			</short_description>
 			<branch_of_study>Studiengang Informatik</branch_of_study>
 			<student>
 				<name>Bernd Fecht</name>
@@ -39,20 +110,18 @@
 			</student>
 			<student>
 				<name>Anton Feit</name>
-				<matrikel_number>123</matrikel_number>
+				<matrikel_number>935482</matrikel_number>
 			</student>
 			<student>
 				<name>Fabian Ammann</name>
-				<matrikel_number>123</matrikel_number>
+				<matrikel_number>935611</matrikel_number>
 			</student>
-		</title_sheet>		
-		<short_description>
-			XML ist wie HTML eine Auszeichnugnssprache, welche zur Darstellung von 
-			elextronischen Texten verwendet wird. Sie ist plattformunabhänig und 
-			somit von jedem Betriebssystem darstellbar.
-		</short_description>
+		</title_sheet>
+		<main_article>
+			
+		</main_article>
 		
-	</subject>	
+	</subject>
 	
 	
 
