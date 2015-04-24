@@ -13,24 +13,25 @@
 
 
 <xsl:template match="subject">
+	<div id="small_border"/>
 	<div class="start_site">
 		<xsl:apply-templates select="title_sheet"/>
-		</div>
+	</div>
 	<xsl:apply-templates select="main_article"/>
 </xsl:template>
 
 <xsl:template match="title_sheet">
 	
-	<div class="centred">
+	<div class="centred container">
 		<h1><xsl:value-of select="main_title"/></h1>
 		<h2><xsl:value-of select="main_sub_title"/></h2>	
 	</div>	
-	<div class="small_container">
+	<div class="container">
 		<xsl:value-of select="short_description"/>
 	</div>
 	<div class="small_container_align_mid">
 		<p>
-			<b><xsl:value-of select="branch_of_study"/></b>
+			<h3><xsl:value-of select="branch_of_study"/></h3>
 		</p>
 	</div>	
 	<xsl:apply-templates select="student"/>
@@ -48,11 +49,13 @@
 </xsl:template>
 
 <xsl:template match="article">
-	<h3><xsl:value-of select="number"/><xsl:value-of select="title"/></h3>
-	<p>
-	<xsl:value-of select="text"/>
-	</p>
-	<xsl:apply-templates select="subarticle"/>
+	<div class="site">
+		<h3><xsl:value-of select="number"/><xsl:value-of select="title"/></h3>
+		<p>
+			<xsl:value-of select="text"/>
+		</p>
+		<xsl:apply-templates select="subarticle"/>
+	</div>
 </xsl:template>
 
 <xsl:template match="subarticle">

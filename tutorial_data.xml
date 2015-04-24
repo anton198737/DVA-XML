@@ -31,10 +31,9 @@
 				<title>Was ist XML?</title>
 				<text>
 				XML ist eine Extensible(X) Markup(M) Language(L), auf dt. eine Auszeichnugssprache.
-				Sie bildet nach dem World Wide Web Consortium (W3C) eine Metasprache, was bedeutet, dass
-				andere anwendungsspezifische Sprachen sie als Basis verwenden.
-				Die Einschränkungen welche durch XML definiert sind, werden durch Schemasprachen wie DTD
-				ausgedrückt.
+				Sie bildet nach dem World Wide Web Consortium (W3C) eine Metasprache, was bedeutet, 
+				dass andere anwendungsspezifische Sprachen sie als Basis verwenden.
+				Die Einschränkungen welche durch XML definiert sind, werden durch Schemasprachen wie DTD ausgedrückt.
 				</text>
 			</article>
 			<article>
